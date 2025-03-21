@@ -1,2 +1,21 @@
 # app
-🛠️ KIM App – The mobile application for Kitchen Inventory Manager (KIM). A smart, intuitive way to track and manage kitchen stock in real time.  Syncs seamlessly with the web app. Built with [React Native / Flutter], designed for an intuitive user experience.
+# 📱 KIM App – Kitchen Inventory Manager  
+
+🚧 **Under Development** 🚧  
+The **KIM App** is the mobile application for **Kitchen Inventory Manager (KIM)**, designed to help users efficiently track and manage their kitchen inventory.  
+
+## 📌 Features (Planned)  
+✅ **Real-time Inventory Tracking** – Monitor your kitchen stock effortlessly.  
+✅ **Smart Notifications** – Get alerts for low stock and expiry dates.  
+✅ **Barcode Scanning** – Quickly add and update items using a barcode scanner.  
+✅ **Cloud Sync** – Seamlessly integrate with the KIM web platform.  
+✅ **User-friendly UI** – Minimalist and intuitive design.  
+
+## 🔧 Tech Stack  
+- **Frontend:** React Native / Flutter (TBD)  
+- **Backend:** []  
+- **Database:** [Firebase / Cockroach]  
+- **CI/CD:** GitHub Actions  
+
+## 🚀 Development Status  
+The app is currently in the early stages of development. Stay tuned for updates!
