@@ -1,37 +1,29 @@
-name: CI/CD Pipeline for KIM App
+name: CI/CD Pipeline
 
 on:
   push:
     branches:
-      - dev
       - main
-  pull_request:
-    branches:
       - dev
 
 jobs:
   build:
-    name: Build & Test App
     runs-on: ubuntu-latest
-
     steps:
-      - name: 🛠️ Checkout Repository
-        uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-      - name: 🏗️ Set Up Node.js
-        uses: actions/setup-node@v4
+      - name: Set Up Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: 📦 Install Dependencies
-        run: npm install  # or yarn install
+      # Remove or comment out this step since no package.json exists yet
+      # - name: Install Dependencies
+      #   run: npm install
 
-      - name: ✅ Run Tests
-        run: npm test  # or yarn test
+      - name: Run Tests (Placeholder)
+        run: echo "No tests yet"
 
-      - name: 📦 Build App
-        run: npm run build  # or yarn build
-
-      - name: 🚀 Deploy (Optional)
-        if: github.ref == 'refs/heads/main'
-        run: echo "Deployment Step (To be added later)"
+      - name: Build App (Placeholder)
+        run: echo "No build steps yet"
