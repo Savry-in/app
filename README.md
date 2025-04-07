@@ -1,8 +1,8 @@
 # app
-# 📱 KIM App – Kitchen Inventory Manager  
+# 📱 Savry App – Kitchen Inventory Manager  
 
 🚧 **Under Development** 🚧  
-The **KIM App** is the mobile application for **Kitchen Inventory Manager (KIM)**, designed to help users efficiently track and manage their kitchen inventory.  
+The **Savry App** is the mobile application for our **Kitchen Inventory Manager**, designed to help users efficiently track and manage their kitchen inventory.  
 
 ## 📌 Features (Planned)  
 ✅ **Real-time Inventory Tracking** – Monitor your kitchen stock effortlessly.  
