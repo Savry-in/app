@@ -4,15 +4,15 @@ import 'package:savry_app_development/Repository/Widgets/TopNavBar.dart';
 
 class LoginScreen extends StatelessWidget {
   static const routeName = '/login';
-  final TextEditingController usernameController=TextEditingController();
-  final TextEditingController passwordController=TextEditingController();
+  final TextEditingController usernameController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
   LoginScreen({super.key});
 
-  void _staticLogin(BuildContext context){
-    final username=usernameController.text;
-    final password=passwordController.text;
+  void _staticLogin(BuildContext context) {
+    final username = usernameController.text;
+    final password = passwordController.text;
 
-    if(username=="admin"&&password=="123"){
+    if (username == "admin" && password == "123") {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         Navigator.pushReplacement(
           context,
@@ -26,13 +26,10 @@ class LoginScreen extends StatelessWidget {
     }
   }
 
-
-
-
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
-          backgroundColor: const Color(0xFFF2DCAC), // background color from image
+      backgroundColor: const Color(0xFFF2DCAC), // background color from image
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24.0),
         child: Center(
@@ -44,7 +41,7 @@ class LoginScreen extends StatelessWidget {
                   'Welcome',
                   style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
                 ),
-                
+
                 const SizedBox(height: 30),
                 const Text('Username'),
                 TextField(
@@ -80,10 +77,7 @@ class LoginScreen extends StatelessWidget {
                         vertical: 12,
                       ),
                     ),
-                    child: const Text(
-                      'Login',
-                      style: TextStyle(fontSize: 18),
-                    ),
+                    child: const Text('Login', style: TextStyle(fontSize: 18)),
                   ),
                 ),
               ],
