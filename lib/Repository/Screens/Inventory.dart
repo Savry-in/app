@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
+import '../widgets/TopNavBar.dart';
 
 class InventoryScreen extends StatelessWidget {
-  const InventoryScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Inventory")),
-      body: const Center(child: Text("Welcome to Inventory!")),
+      appBar: TopNavBar(),
+      body: Container(
+        color: Colors.amber[100],
+        child: Center(
+          child: Text(
+            'Home Page After Login',
+            style: TextStyle(fontSize: 24),
+          ),
+        ),
+      ),
     );
   }
 }
