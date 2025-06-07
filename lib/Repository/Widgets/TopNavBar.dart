@@ -28,7 +28,7 @@ class TopNavBar extends StatelessWidget implements PreferredSizeWidget {
                   hintText: 'Search',
                   prefixIcon: Icon(Icons.search),
                   border: InputBorder.none,
-                  contentPadding: EdgeInsets.symmetric(vertical: 10),
+                  contentPadding: EdgeInsets.symmetric(vertical: 8),
                 ),
               ),
             ),
