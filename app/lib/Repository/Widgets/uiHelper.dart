@@ -1,22 +1,22 @@
 import 'package:flutter/cupertino.dart';
 
 class UiHelper {
-  static CustomImage({required String img}) {
+  static customImage({required String img}) {
     return Image.asset("assets/Images/$img");
   }
 
-  static CustomText({
+  static customText({
     required String text,
     required Color color,
     required FontWeight fontWeight,
-    String? FontFamily,
+    String? fontFamily,
     required double fontSize,
   }) {
     return Text(
       text,
       style: TextStyle(
         fontSize: fontSize,
-        fontFamily: FontFamily ?? "regular",
+        fontFamily: fontFamily ?? "regular",
         fontWeight: fontWeight,
         color: color,
       ),
