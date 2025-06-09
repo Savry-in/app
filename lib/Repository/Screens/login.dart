@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:savry_app_development/Repository/Screens/Inventory.dart';
-import 'package:savry_app_development/Repository/Widgets/TopNavBar.dart';
 
 class LoginScreen extends StatelessWidget {
   static const routeName = '/login';
