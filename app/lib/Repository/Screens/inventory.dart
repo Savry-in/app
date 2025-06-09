@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../Widgets/UiHelper.dart';
-import '../widgets/TopNavBar.dart';
+import 'package:savry_app_development/Repository/Widgets/UiHelper.dart';
+import 'package:savry_app_development/Repository/Widgets/TopNavBar.dart';
+
 
 class InventoryScreen extends StatelessWidget {
   @override
