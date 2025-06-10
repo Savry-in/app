@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TopNavBar extends StatelessWidget implements PreferredSizeWidget {
+class Topnavbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => Size.fromHeight(60);
 

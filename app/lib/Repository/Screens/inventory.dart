@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:savry_app_development/Repository/Widgets/uiHelper.dart';
-import 'package:savry_app_development/Repository/Widgets/topNavBar.dart';
+import 'package:savry_app_development/Repository/Widgets/topnavbar.dart';
 
 
 class InventoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: TopNavBar(),
+      appBar: Topnavbar(),
       backgroundColor: Colors.amber[100],
       body: SafeArea(
         child: Padding(
