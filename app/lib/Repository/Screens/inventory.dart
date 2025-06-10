@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:savry_app_development/Repository/Widgets/uiHelper.dart';
+import 'package:savry_app_development/Repository/Widgets/uihelper.dart';
 import 'package:savry_app_development/Repository/Widgets/topnavbar.dart';
 
 
 class InventoryScreen extends StatelessWidget {
+  const InventoryScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +17,7 @@ class InventoryScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              UiHelper.customText(
+              Uihelper.customText(
                 text: "Expiring soon",
                 color: Color(0xFF000000),
                 fontWeight: FontWeight.bold,
