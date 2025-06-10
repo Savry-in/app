@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TopNavBar extends StatelessWidget implements PreferredSizeWidget {
+class Topnavbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => Size.fromHeight(60);
 
@@ -28,7 +28,7 @@ class TopNavBar extends StatelessWidget implements PreferredSizeWidget {
                   hintText: 'Search',
                   prefixIcon: Icon(Icons.search),
                   border: InputBorder.none,
-                  contentPadding: EdgeInsets.symmetric(vertical: 8),
+                  contentPadding: EdgeInsets.symmetric(vertical: 10),
                 ),
               ),
             ),
