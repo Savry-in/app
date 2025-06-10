@@ -4,7 +4,8 @@ import 'package:savry_app_development/Repository/Widgets/topnavbar.dart';
 
 
 class InventoryScreen extends StatelessWidget {
-  const InventoryScreen({Key? key}) : super(key: key);
+  const InventoryScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Topnavbar extends StatelessWidget implements PreferredSizeWidget {
-  const Topnavbar({Key? key}) : super(key: key);
+  const Topnavbar({super.key});
+
   @override
   Size get preferredSize => Size.fromHeight(60);
 
