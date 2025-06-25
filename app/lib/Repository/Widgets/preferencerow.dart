@@ -4,8 +4,7 @@ import 'package:savry_app_development/Repository/Widgets/uihelper.dart';
 class preferenceRow extends StatelessWidget {
   final String title;
   final String value;
-  const preferenceRow({Key? key, required this.title, required this.value})
-    : super(key: key);
+  const preferenceRow({super.key, required this.title, required this.value});
   @override
   Widget build(BuildContext context) {
 

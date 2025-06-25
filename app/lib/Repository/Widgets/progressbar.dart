@@ -4,10 +4,10 @@ class progressBar extends StatelessWidget {
   final int totalSteps;
   final int currentStep;
   const progressBar({
-    Key? key,
+    super.key,
     required this.totalSteps,
     required this.currentStep,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext build) {

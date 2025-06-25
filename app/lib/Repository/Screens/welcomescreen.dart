@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:savry_app_development/Repository/Screens/login.dart';
 import 'package:savry_app_development/Repository/Screens/personalscreen.dart';
 
 import '../Widgets/uihelper.dart';
 
 class welcomeScreen extends StatelessWidget {
-  welcomeScreen({super.key});
+  const welcomeScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
