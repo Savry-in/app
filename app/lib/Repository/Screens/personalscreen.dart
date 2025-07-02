@@ -5,6 +5,7 @@ import 'package:savry_app_development/Repository/Widgets/progressbar.dart';
 import 'package:savry_app_development/Repository/Widgets/uihelper.dart';
 
 class 	FamilyPreferenceScreen extends StatefulWidget {
+  // ignore: library_private_types_in_public_apiS
   const FamilyPreferenceScreen({super.key});
 
   @override
