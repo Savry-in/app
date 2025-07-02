@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:savry_app_development/Repository/Widgets/uihelper.dart';
 
-class preferenceRow extends StatelessWidget {
+class PreferenceRow extends StatelessWidget {
   final String title;
   final String value;
-  const preferenceRow({Key? key, required this.title, required this.value})
-    : super(key: key);
+  const PreferenceRow({super.key, required this.title, required this.value});
   @override
   Widget build(BuildContext context) {
 

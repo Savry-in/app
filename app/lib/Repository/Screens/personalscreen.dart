@@ -4,12 +4,16 @@ import 'package:savry_app_development/Repository/Widgets/preferencerow.dart';
 import 'package:savry_app_development/Repository/Widgets/progressbar.dart';
 import 'package:savry_app_development/Repository/Widgets/uihelper.dart';
 
-class familyPreferenceScreen extends StatefulWidget {
+class 	FamilyPreferenceScreen extends StatefulWidget {
+
+  const FamilyPreferenceScreen({super.key});
+  // ignore: library_private_types_in_public_api
+
   @override
-  _familyPreferenceScreenState createState() => _familyPreferenceScreenState();
+  FamilyPreferenceScreenState createState() => FamilyPreferenceScreenState();
 }
 
-class _familyPreferenceScreenState extends State<familyPreferenceScreen> {
+class FamilyPreferenceScreenState extends State<FamilyPreferenceScreen> {
   int totalPages = 4;
   int currentPage = 3;
   int selectedFamilyMembers = 3;
@@ -41,7 +45,7 @@ class _familyPreferenceScreenState extends State<familyPreferenceScreen> {
           child: Column(
             children: [
               // 🟣 Dynamic Progress Bar
-              progressBar(totalSteps: totalPages, currentStep: currentPage),
+              ProgressBar(totalSteps: totalPages, currentStep: currentPage),
               SizedBox(height: 20),
 
               // 🔘 Next button for testing
@@ -61,11 +65,11 @@ class _familyPreferenceScreenState extends State<familyPreferenceScreen> {
               ),
 
               const SizedBox(height: 32),
-              preferenceRow(title: "No. of Family Members", value: "not set"),
-              preferenceRow(title: "No. of Adults", value: "not Set"),
-              preferenceRow(title: "No. of Children", value: "not Set"),
-              preferenceRow(title: "Family Diet Type", value: "not set"),
-              preferenceRow(
+              PreferenceRow(title: "No. of Family Members", value: "not set"),
+              PreferenceRow(title: "No. of Adults", value: "not Set"),
+              PreferenceRow(title: "No. of Children", value: "not Set"),
+              PreferenceRow(title: "Family Diet Type", value: "not set"),
+              PreferenceRow(
                 title: "How Health-conscious\nis your family",
                 value: "not set",
               ),

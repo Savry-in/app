@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 
-class progressBar extends StatelessWidget {
+class 	ProgressBar extends StatelessWidget {
   final int totalSteps;
   final int currentStep;
-  const progressBar({
-    Key? key,
+  const 	ProgressBar({
+    super.key,
     required this.totalSteps,
     required this.currentStep,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext build) {
