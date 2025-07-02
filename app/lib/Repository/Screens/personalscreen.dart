@@ -8,12 +8,12 @@ class 	FamilyPreferenceScreen extends StatefulWidget {
 
   const FamilyPreferenceScreen({super.key});
 
-  // ignore: library_private_types_in_public_api
+
   @override
-  _FamilyPreferenceScreenState createState() => _FamilyPreferenceScreenState();
+  FamilyPreferenceScreenState createState() => FamilyPreferenceScreenState();
 }
 
-class _FamilyPreferenceScreenState extends State<FamilyPreferenceScreen> {
+class FamilyPreferenceScreenState extends State<FamilyPreferenceScreen> {
   int totalPages = 4;
   int currentPage = 3;
   int selectedFamilyMembers = 3;
