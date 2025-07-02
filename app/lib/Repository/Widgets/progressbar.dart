@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 
-class progressBar extends StatelessWidget {
+class 	ProgressBar extends StatelessWidget {
   final int totalSteps;
   final int currentStep;
-  const progressBar({
+  const 	ProgressBar({
     super.key,
     required this.totalSteps,
     required this.currentStep,

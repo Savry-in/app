@@ -3,8 +3,8 @@ import 'package:savry_app_development/Repository/Screens/personalscreen.dart';
 
 import '../Widgets/uihelper.dart';
 
-class welcomeScreen extends StatelessWidget {
-  const welcomeScreen({super.key});
+class WelcomeScreen extends StatelessWidget {
+  const WelcomeScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,7 +62,7 @@ class welcomeScreen extends StatelessWidget {
                     onPressed: (){
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (_) => familyPreferenceScreen()),
+                        MaterialPageRoute(builder: (_) => FamilyPreferenceScreen()),
                       );
                     },
                     child: Uihelper.customText(text: "Get Started", color: Colors.white, fontWeight: FontWeight.normal, fontSize: 16),

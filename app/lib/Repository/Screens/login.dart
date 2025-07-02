@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:savry_app_development/Repository/Screens/signin.dart';
+//import 'package:savry_app_development/Repository/Screens/signin.dart';
 
 class LoginScreen extends StatelessWidget {
   static const routeName = '/login';
@@ -7,22 +7,22 @@ class LoginScreen extends StatelessWidget {
 
   LoginScreen({super.key});
 
-  void _staticLogin(BuildContext context) {
-    final username = usernameController.text;
-
-    if (username == "7007689616") {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (_) => SigninScreen()),
-        );
-      });
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Invalid username or password")),
-      );
-    }
-  }
+  // void _staticLogin(BuildContext context) {
+  //   final username = usernameController.text;
+  //
+  //   if (username == "7007689616") {
+  //     WidgetsBinding.instance.addPostFrameCallback((_) {
+  //       Navigator.pushReplacement(
+  //         context,
+  //         MaterialPageRoute(builder: (_) => SigninScreen()),
+  //       );
+  //     });
+  //   } else {
+  //     ScaffoldMessenger.of(context).showSnackBar(
+  //       const SnackBar(content: Text("Invalid username or password")),
+  //     );
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class LoginScreen extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.1),
+                color: Colors.white.withAlpha((0.5 * 255).toInt()), // or simply use .withAlpha(127),
                 blurRadius: 10,
                 spreadRadius: 2,
               ),
