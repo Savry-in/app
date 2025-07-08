@@ -1,9 +1,10 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
-class 	ProgressBar extends StatelessWidget {
+
+class ProgressBar extends StatelessWidget {
   final int totalSteps;
   final int currentStep;
-  const 	ProgressBar({
+  const ProgressBar({
     super.key,
     required this.totalSteps,
     required this.currentStep,
@@ -11,20 +12,31 @@ class 	ProgressBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext build) {
+    final int completed = currentStep.clamp(0,totalSteps);
+    final int remaining = (totalSteps-completed).clamp(0,totalSteps);
     return Row(
-      children: List.generate(totalSteps, (index) {
-        bool isActive = index < currentStep;
-        return Expanded(
-          child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 4),
-            height: 6,
-            decoration: BoxDecoration(
-              color: isActive ? Color(0xFF8B59BB) : Color(0xFFD9D9D9),
-              borderRadius: BorderRadius.circular(3),
-            ),
+      children: [
+        Expanded(flex: completed,
+        child: Container(
+          height: 12,
+          decoration: BoxDecoration(
+            color: Colors.purple,
+            borderRadius: BorderRadius.circular(6),
+
           ),
-        );
-      }),
+        ),),
+        Expanded(flex: remaining,
+        child: Container(
+          height: 12,
+          decoration: BoxDecoration(
+            color: Colors.grey,
+            borderRadius: BorderRadius.circular(6),
+          ),
+        ),),
+      ],
+
     );
+
+
   }
 }
