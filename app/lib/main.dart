@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:savry_app_development/Repository/Screens/login.dart';
 import 'package:savry_app_development/Repository/Screens/welcomescreen.dart';
 
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget{
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
         useMaterial3: false,
       ),
-      home:WelcomeScreen());
+      home:LoginScreen());
   }
 }
 

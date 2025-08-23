@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:savry_app_development/Repository/Screens/inventory.dart';
 
-class SigninScreen extends StatelessWidget {
+class OtpScreen extends StatelessWidget {
   final TextEditingController passwordController = TextEditingController();
-  SigninScreen({super.key});
+  OtpScreen({super.key});
 
-  void _signinScreen(BuildContext context) {
+  void _otpScreen(BuildContext context) {
     final passwordOTP = passwordController.text;
 
     if (passwordOTP == '123456') {
@@ -47,7 +47,7 @@ class SigninScreen extends StatelessWidget {
                 const SizedBox(height: 30),
                 Center(
                   child: ElevatedButton(
-                    onPressed: () => _signinScreen(context),
+                    onPressed: () => _otpScreen(context),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFF3C4F3F), // green button
                       shape: RoundedRectangleBorder(
